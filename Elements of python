@@ -1,0 +1,29 @@
+# Importing a module (math for demonstration)
+import math
+
+# Function to find the maximum of three numbers
+def find_maximum(a, b, c):
+    # Control Structure: Using if-elif-else statements
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+
+# Variables to store input numbers
+x = 10           # Integer
+y = 15.5         # Float
+z = int("12")    # String converted to Integer (explicit type conversion)
+
+# Demonstrating different data types
+data_types_demo = [x, y, z]  # List
+print("Data Types Demo:", data_types_demo)
+
+# Using a control structure (if statement)
+max_value = find_maximum(x, y, z)
+print("The maximum value is:", max_value)
+
+# Using a module (math)
+sqrt_max = math.sqrt(max_value)
+print("Square root of the maximum value is:", sqrt_max)
