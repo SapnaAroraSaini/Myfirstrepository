@@ -1,0 +1,21 @@
+# Read faculty data
+faculty_df = pd.read_csv("faculty.csv")
+
+plt.figure()
+plt.scatter(faculty_df["Experience"], faculty_df["Performance"])
+plt.title("Faculty Experience vs Performance")
+plt.xlabel("Experience (Years)")
+plt.ylabel("Performance Score")
+plt.grid(True)
+plt.show()
+
+
+student_df = pd.read_csv("student_data.csv")
+
+plt.figure()
+plt.scatter(student_df["StudyHours"], student_df["Marks"])
+plt.title("Study Hours vs Marks")
+plt.xlabel("Study Hours")
+plt.ylabel("Marks")
+plt.grid(True)
+plt.show()
